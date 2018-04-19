@@ -29,14 +29,14 @@ class App extends Component {
     return(
       <div>
       <Header />
-      <main style={{display: "flex"}}>
+      <main className="px4 flex">
 
         <RecipeList recipes={recipes} 
           style={{flex: 3}} 
           onClick={this.onRecipeClick}
         />
 
-        <RecipeDetail recipe={currentRecipe}
+        <RecipeDetail className="ml4" recipe={currentRecipe}
          style={{flex: 5}}
         />
       </main>
