@@ -5,6 +5,4 @@ import './styles/index.css';
 
 const rootHtml = document.getElementById('root');
 
-ReactDOM.render(
-  <App />,rootHtml
-)
+ReactDOM.render(<App />, rootHtml);
