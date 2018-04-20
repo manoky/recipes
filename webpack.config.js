@@ -4,38 +4,40 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 require('dotenv').config();
 
 module.exports = {
-  context: path.join(__dirname,'src'),
+  context: path.join(__dirname, 'src'),
   mode: 'development',
-  entry: [ 'whatwg-fetch','./index.js'],
+  entry: ['whatwg-fetch', './index.js'],
   output: {
-    path: path.resolve(__dirname,'dist'),
-    filename: './bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: './bundle.js',
   },
   module: {
     rules: [
       {
-        test:/\.js$/,
-        exclude:/node_modules/, 
-        loader: 'babel-loader'
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
       },
       {
-        test:/\.(png|jpeg|jpg)$/,
-        loader: 'file-loader'
+        test: /\.(png|jpeg|jpg)$/,
+        loader: 'file-loader',
       },
       {
-        test:/\.css$/,
-        loader: ['style-loader','css-loader','postcss-loader']
-      }
-    ]
+        test: /\.css$/,
+        loader: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+    ],
   },
-  plugins:[
+  devServer: {
+    historyApiFallback: true,
+  },
+  plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
-      inject: 'body'
+      inject: 'body',
     }),
     new webpack.DefinePlugin({
-      API_URL:JSON.stringify(process.env.API_URL)
-    })
-  ]
-
+      API_URL: JSON.stringify(process.env.API_URL),
+    }),
+  ],
 };
