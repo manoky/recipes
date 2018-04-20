@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const RecipeList = props => (
   <div style={props.style}>
     <h2 className="h2">Recipes</h2>
-    <ul className="list-reset" >
+    <ul className="list-reset">
       {props.recipes.map(recipe => (
         <li
           key={recipe.id}
