@@ -4,12 +4,12 @@
 @import "./borders";
 @import "./fonts";
 @import "./share";
+@import "./layout";
+@import "./colors";
 
 :root {
   --h1:70px;
   --h2:50px;
-  --lime: #cdebdd;
-  --black:#222;
 }
 
 * {

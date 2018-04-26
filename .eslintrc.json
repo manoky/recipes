@@ -3,9 +3,13 @@
     "extends": [
         "prettier",
         "airbnb"],
+    "plugins": [
+        "jest"
+    ],
     "env": {
         "es6":true,
-        "browser": true
+        "browser": true,
+        "jest/globals": true
     },
     "globals":{
         "API_URL": true
@@ -13,10 +17,14 @@
     "rules": {
         "arrow-parens": 0,
         "react/jsx-filename-extension": 0,
+        "react/require-default-props": 0,
         "react/forbid-prop-types": 0,
+        "react/prefer-stateless-function": 0,
         "jsx-a11y/accessible-emoji": 0,
         "jsx-a11y/click-events-have-key-events": 0,
-        "jsx-a11y/no-noninteractive-element-interactions": 0
+        "jsx-a11y/no-noninteractive-element-interactions": 0,
+        "import/no-extraneous-dependencies": 0
+
     }
     
 }
