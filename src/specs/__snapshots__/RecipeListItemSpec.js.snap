@@ -5,14 +5,14 @@ exports[`<RecipeListItem /> Should correctly render recipe 1`] = `
   className="py2 border-bottom border-bottom-dashed pointer"
   onClick={[Function]}
 >
-  <span
+  <div
     aria-label="favorite"
-    className="mr1"
+    className="mr1 animated inline-block"
     onClick={[Function]}
     role="img"
   >
     ⬜️
-  </span>
+  </div>
   <span>
     Test Recipe
   </span>
@@ -27,14 +27,14 @@ exports[`<RecipeListItem /> Should not break if no recipe passed 1`] = `
   className="py2 border-bottom border-bottom-dashed pointer"
   onClick={[Function]}
 >
-  <span
+  <div
     aria-label="favorite"
-    className="mr1"
+    className="mr1 animated inline-block"
     onClick={[Function]}
     role="img"
   >
     ⬜️
-  </span>
+  </div>
   <span />
   <span />
 </li>
@@ -45,14 +45,14 @@ exports[`<RecipeListItem /> Should render favorited state 1`] = `
   className="py2 border-bottom border-bottom-dashed pointer"
   onClick={[Function]}
 >
-  <span
+  <div
     aria-label="favorite"
-    className="mr1"
+    className="mr1 animated inline-block"
     onClick={[Function]}
     role="img"
   >
     ✅
-  </span>
+  </div>
   <span>
     Test Recipe
   </span>

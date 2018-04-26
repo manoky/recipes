@@ -51,10 +51,7 @@ describe('<RecipeListItem />', () => {
     const component = mount(
       <RecipeListItem recipe={testRecipe} onFavorited={onFavorited} />,
     );
-    component
-      .find('span')
-      .first()
-      .simulate('click');
+    component.find('div').simulate('click');
 
     expect(onFavorited.mock.calls.length).toBe(1);
   });
@@ -65,10 +62,7 @@ describe('<RecipeListItem />', () => {
     const component = mount(
       <RecipeListItem recipe={testRecipe} onFavorited={onFavorited} />,
     );
-    component
-      .find('span')
-      .first()
-      .simulate('click');
+    component.find('div').simulate('click');
 
     expect(onFavorited.mock.calls.length).toBe(1);
   });
@@ -84,10 +78,7 @@ describe('<RecipeListItem />', () => {
         onFavorited={onFavorited}
       />,
     );
-    component
-      .find('span')
-      .first()
-      .simulate('click');
+    component.find('div').simulate('click');
 
     expect(onClick.mock.calls.length).toBe(0);
     expect(onFavorited.mock.calls.length).toBe(1);

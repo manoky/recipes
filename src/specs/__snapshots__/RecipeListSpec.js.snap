@@ -14,14 +14,14 @@ exports[`<RecipeList /> Should render correctly 1`] = `
     className="py2 border-bottom border-bottom-dashed pointer"
     onClick={[Function]}
   >
-    <span
+    <div
       aria-label="favorite"
-      className="mr1"
+      className="mr1 animated inline-block"
       onClick={[Function]}
       role="img"
     >
       ⬜️
-    </span>
+    </div>
     <span>
       Recipe 1
     </span>
@@ -33,14 +33,14 @@ exports[`<RecipeList /> Should render correctly 1`] = `
     className="py2 border-bottom border-bottom-dashed pointer"
     onClick={[Function]}
   >
-    <span
+    <div
       aria-label="favorite"
-      className="mr1"
+      className="mr1 animated inline-block"
       onClick={[Function]}
       role="img"
     >
       ⬜️
-    </span>
+    </div>
     <span>
       Recipe 2
     </span>
@@ -59,14 +59,14 @@ exports[`<RecipeList /> Should render favorite state correctly 1`] = `
     className="py2 border-bottom border-bottom-dashed pointer"
     onClick={[Function]}
   >
-    <span
+    <div
       aria-label="favorite"
-      className="mr1"
+      className="mr1 animated inline-block"
       onClick={[Function]}
       role="img"
     >
       ✅
-    </span>
+    </div>
     <span>
       Recipe 1
     </span>
@@ -78,14 +78,14 @@ exports[`<RecipeList /> Should render favorite state correctly 1`] = `
     className="py2 border-bottom border-bottom-dashed pointer"
     onClick={[Function]}
   >
-    <span
+    <div
       aria-label="favorite"
-      className="mr1"
+      className="mr1 animated inline-block"
       onClick={[Function]}
       role="img"
     >
       ⬜️
-    </span>
+    </div>
     <span>
       Recipe 2
     </span>
