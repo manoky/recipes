@@ -1,6 +1,5 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/interactive-supports-focus */
+/* eslint-disable object-curly-newline */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from './Checkbox';
