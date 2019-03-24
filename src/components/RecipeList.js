@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CSSTransitionGroup } from 'react-transition-group';
+import{ CSSTransitionGroup}  from 'react-transition-group';
 import RecipeListItem from './RecipeListItem';
 
 const RecipeList = ({ style, favorites, recipes, ...props }) => (
